@@ -1,0 +1,292 @@
+/* ================================ 
+   Theme : ZeroBiz v1
+   Designed : UltrasDzCoder
+   URL : https://www.youtube.com/c/UltrasDzCoder
+   Year :2022 
+   FrameWorks & Resources: Bulma Css , FontAwsome , pixabay
+  ================================ */
+
+* {
+   scroll-behavior: smooth;
+}
+
+/* Sroll */
+::-webkit-scrollbar {
+   width: 7px;
+}
+
+::-webkit-scrollbar-track {
+   background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+   background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+   background: #555;
+}
+
+/* Sroll */
+/* Utils */
+body {
+   overflow: hidden;
+}
+
+main {
+   position: relative;
+}
+
+#numbers {
+   transition: all 5s ease-in-out 1s;
+}
+
+.is-overlay {
+   width: 100%;
+   height: 100%;
+   background-color: black;
+   opacity: .85;
+}
+
+/* Utils */
+
+
+/* Top Scroll */
+.arr-up {
+   position: fixed;
+   right: 17px;
+   bottom: 40px;
+   z-index: 999999;
+   cursor: pointer;
+   transition: all .5s ease;
+}
+
+.arr-up:hover {
+   padding-bottom: 5px;
+   transition: padding 1s ease;
+}
+
+.arr-up:active {
+   border: 1px solid blue;
+}
+
+/* Top Scroll */
+
+/* Navbar */
+
+#mainNavbar a {
+   color: white !important;
+}
+
+.d-none {
+   display: none;
+}
+
+
+
+.fixed {
+   z-index: 99999;
+   position: fixed;
+   left: 0;
+   right: 0;
+   top: 0;
+   transition: all .3s ease;
+   box-shadow: 5px 0 0 #fff;
+   padding-block: 1px !important;
+}
+
+.links-left a {
+   padding-inline: .75em;
+}
+
+#mainNavbar {
+   background-color: black;
+}
+
+.navbar {
+   background-color: transparent;
+}
+
+.navbar-item:not(.navbar-brand a):hover {
+   background: transparent;
+   border-bottom: 1px solid white;
+}
+
+/* Navbar */
+
+/* Hero */
+
+#hero {
+   background: url("../img/company-1.jpg") center/cover;
+   height: 91vh;
+   position: relative;
+}
+
+.title-hero, .title, .subtitle {
+   color: white !important;
+}
+
+.title-hero h2 {
+   font-size: 5rem;
+}
+
+.subtitle {
+   width: 60%;
+}
+
+/* Hero */
+
+/* News */
+
+
+.news {
+   padding-block: 5em;
+}
+
+.img-news {
+   height: 300px;
+}
+
+/* News */
+
+
+
+/* Project */
+#projects {
+   background: url("../img/counter-banner.jpg") center/cover;
+   height: 30vh;
+   position: relative;
+}
+
+.icon-project {
+   color: white;
+}
+
+.icon-item i {
+   font-size: 4.5rem;
+   padding-right: .25em;
+}
+
+/* Project */
+/* Team */
+
+.team {
+   padding-block: 5em;
+   color: white;
+}
+
+.team-img {
+   position: relative;
+}
+
+/* Team */
+
+/* Contact */
+
+
+.layer {
+   position: absolute;
+   bottom: 0;
+   height: 25%;
+   padding: 1em;
+   opacity: .85;
+   width: 100%;
+}
+
+#contactus {
+   padding-top: 5em;
+}
+
+.contactus {
+   position: relative;
+   background: url("../img/map.jpg") center/cover;
+   height: 55vh;
+
+}
+
+/* Contact */
+
+
+/* Footer */
+
+.left-contact>*, .left-contact a, .right-contact>*, footer {
+   color: white !important;
+}
+
+.socials {
+   gap: 1.75em;
+}
+
+.two-input {
+   gap: 1.25em;
+}
+
+.currentTime {
+   color: red;
+}
+
+/* Footer */
+
+
+/* Media */
+
+@media (max-width:1022px) {
+   #mainNavbar {
+      padding-block: 0 !important;
+   }
+
+   #topNavbar {
+      display: none;
+   }
+
+   .mob-list {
+      position: fixed;
+      top: 7%;
+      background-color: black;
+      width: 100%;
+      padding: 1.75em;
+      text-align: center;
+   }
+
+   .mob-list a {
+      font-size: 1.5rem;
+      display: inline-block;
+      padding: 1em;
+   }
+
+   .title-hero h2 {
+      font-size: 2.5rem;
+   }
+
+   .subtitle {
+      width: 100%;
+   }
+
+   #projects {
+      height: auto;
+   }
+
+   .arr-up {
+      display: none !important;
+   }
+
+   .contactus {
+      height: auto;
+   }
+
+   .socials {
+      justify-content: center;
+   }
+
+   .two-input {
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+   }
+
+   .news figure img {
+      width: 100%;
+   }
+}
+
+/* Media */
